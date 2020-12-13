@@ -1,0 +1,249 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Operational:LM2904 U1
+U 1 1 5FD51D3D
+P 5100 2750
+F 0 "U1" H 5100 3117 50  0000 C CNN
+F 1 "LM2904" H 5100 3026 50  0000 C CNN
+F 2 "" H 5100 2750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm358.pdf" H 5100 2750 50  0001 C CNN
+	1    5100 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5FD5351B
+P 3950 4550
+F 0 "#PWR0101" H 3950 4300 50  0001 C CNN
+F 1 "GND" H 3955 4377 50  0000 C CNN
+F 2 "" H 3950 4550 50  0001 C CNN
+F 3 "" H 3950 4550 50  0001 C CNN
+	1    3950 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5FD53C99
+P 5000 1950
+F 0 "R4" V 5207 1950 50  0000 C CNN
+F 1 "10k" V 5116 1950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 4930 1950 50  0001 C CNN
+F 3 "~" H 5000 1950 50  0001 C CNN
+	1    5000 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Variable C4
+U 1 1 5FD54EE0
+P 4750 3750
+F 0 "C4" H 4865 3796 50  0000 L CNN
+F 1 "1.57N" H 4865 3705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_Trimmer_Murata_TZB4-A" H 4750 3750 50  0001 C CNN
+F 3 "~" H 4750 3750 50  0001 C CNN
+	1    4750 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5FD557C0
+P 3550 3750
+F 0 "C2" H 3665 3796 50  0000 L CNN
+F 1 "15.6P" H 3665 3705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0504_1310Metric" H 3588 3600 50  0001 C CNN
+F 3 "~" H 3550 3750 50  0001 C CNN
+	1    3550 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5FD64E11
+P 3950 2850
+F 0 "R3" V 4157 2850 50  0000 C CNN
+F 1 "10k" V 4066 2850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 3880 2850 50  0001 C CNN
+F 3 "~" H 3950 2850 50  0001 C CNN
+	1    3950 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5FD65474
+P 3150 2850
+F 0 "R1" V 3357 2850 50  0000 C CNN
+F 1 "10k" V 3266 2850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 3080 2850 50  0001 C CNN
+F 3 "~" H 3150 2850 50  0001 C CNN
+	1    3150 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5FD65A52
+P 4000 2650
+F 0 "R2" V 4207 2650 50  0000 C CNN
+F 1 "10k" V 4116 2650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0201_0603Metric" V 3930 2650 50  0001 C CNN
+F 3 "~" H 4000 2650 50  0001 C CNN
+	1    4000 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5FD6A55E
+P 4400 3750
+F 0 "C3" H 4515 3796 50  0000 L CNN
+F 1 "15.6P" H 4515 3705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0504_1310Metric" H 4438 3600 50  0001 C CNN
+F 3 "~" H 4400 3750 50  0001 C CNN
+	1    4400 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Variable C1
+U 1 1 5FD6AC6E
+P 3050 3700
+F 0 "C1" H 3165 3746 50  0000 L CNN
+F 1 "1.57N" H 3165 3655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_Trimmer_Murata_TZB4-A" H 3050 3700 50  0001 C CNN
+F 3 "~" H 3050 3700 50  0001 C CNN
+	1    3050 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 1950 6550 1950
+Wire Wire Line
+	6550 1950 6550 2750
+Wire Wire Line
+	6550 2750 5400 2750
+Wire Wire Line
+	3550 2650 3850 2650
+Wire Wire Line
+	4150 2650 4400 2650
+Wire Wire Line
+	4850 1950 4400 1950
+Wire Wire Line
+	4400 1950 4400 2650
+Connection ~ 4400 2650
+Wire Wire Line
+	4400 2650 4800 2650
+Wire Wire Line
+	4800 2850 4400 2850
+Wire Wire Line
+	3800 2850 3550 2850
+Wire Wire Line
+	4400 3600 4400 3300
+Connection ~ 4400 2850
+Wire Wire Line
+	4400 2850 4100 2850
+Wire Wire Line
+	4750 3600 4750 3300
+Wire Wire Line
+	4750 3300 4400 3300
+Connection ~ 4400 3300
+Wire Wire Line
+	4400 3300 4400 2850
+Wire Wire Line
+	4400 3900 4400 4100
+Wire Wire Line
+	4400 4550 3950 4550
+Wire Wire Line
+	4750 3900 4750 4100
+Wire Wire Line
+	4750 4100 4400 4100
+Connection ~ 4400 4100
+Wire Wire Line
+	4400 4100 4400 4550
+Wire Wire Line
+	3550 2850 3550 3350
+Connection ~ 3550 2850
+Wire Wire Line
+	3550 2850 3300 2850
+Wire Wire Line
+	3550 3900 3550 4050
+Wire Wire Line
+	3550 4550 3950 4550
+Connection ~ 3950 4550
+Wire Wire Line
+	3050 3850 3050 4050
+Wire Wire Line
+	3050 4050 3550 4050
+Connection ~ 3550 4050
+Wire Wire Line
+	3550 4050 3550 4550
+Wire Wire Line
+	3050 3550 3050 3350
+Wire Wire Line
+	3050 3350 3550 3350
+Connection ~ 3550 3350
+Wire Wire Line
+	3550 3350 3550 3600
+$Comp
+L power:GND #PWR0102
+U 1 1 5FD79287
+P 1500 2750
+F 0 "#PWR0102" H 1500 2500 50  0001 C CNN
+F 1 "GND" H 1505 2577 50  0000 C CNN
+F 2 "" H 1500 2750 50  0001 C CNN
+F 3 "" H 1500 2750 50  0001 C CNN
+	1    1500 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_WallPlug P1
+U 1 1 5FD5E013
+P 1300 2650
+F 0 "P1" H 1317 2975 50  0000 C CNN
+F 1 "Conn_WallPlug" H 1317 2884 50  0000 C CNN
+F 2 "" H 1700 2650 50  0001 C CNN
+F 3 "~" H 1700 2650 50  0001 C CNN
+	1    1300 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VAC #PWR0103
+U 1 1 5FD50A56
+P 1500 2550
+F 0 "#PWR0103" H 1500 2450 50  0001 C CNN
+F 1 "VAC" H 1500 2825 50  0000 C CNN
+F 2 "" H 1500 2550 50  0001 C CNN
+F 3 "" H 1500 2550 50  0001 C CNN
+	1    1500 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VAC #PWR0104
+U 1 1 5FD811A6
+P 3000 2850
+F 0 "#PWR0104" H 3000 2750 50  0001 C CNN
+F 1 "VAC" H 3000 3125 50  0000 C CNN
+F 2 "" H 3000 2850 50  0001 C CNN
+F 3 "" H 3000 2850 50  0001 C CNN
+	1    3000 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5FD83497
+P 3550 2650
+F 0 "#PWR0105" H 3550 2400 50  0001 C CNN
+F 1 "GND" H 3555 2477 50  0000 C CNN
+F 2 "" H 3550 2650 50  0001 C CNN
+F 3 "" H 3550 2650 50  0001 C CNN
+	1    3550 2650
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
